@@ -37,6 +37,13 @@ pipeline {
                 }
             }
 }
+    stage ('deploy') {
+            steps {
+                withMaven(maven : 'mvn') {
+                    sh 'mvn deploy'
+                }
+            }
+}
     
     
     

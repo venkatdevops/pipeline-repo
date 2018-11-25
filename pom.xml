@@ -38,7 +38,7 @@
        <repository>
          <id>internal.repo</id>
          <name>Internal repo</name>
-         <url>file:///home/thara/testesb/in</url>
+         <url>file:////var/lib/jenkins/workspace/pipe-line-project/in</url>
        </repository>
 </distributionManagement>
 </project>

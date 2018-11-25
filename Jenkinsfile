@@ -27,6 +27,21 @@ pipeline {
                     sh 'mvn test-compile'
                 }
             }
-        }
+               }
+    
+    
+    stage ('package') {
+            steps {
+                withMaven(maven : 'mvn') {
+                    sh 'mvn package'
+                }
+            }
+}
+    
+    
+    
+    
     }
+    
+    
 }
